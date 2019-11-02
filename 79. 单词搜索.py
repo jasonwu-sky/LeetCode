@@ -1,6 +1,7 @@
 '''
-回溯法
-这个题，要注意
+https://leetcode-cn.com/problems/word-search/
+回溯算法
+这个题，要注意backtrack函数的解决问题。本backtrack（）返回第i，j个位置为开头，是否包含对应word.
 '''
 
 class Solution:
@@ -35,7 +36,7 @@ class Solution:
         flag = [False]
         for i in range(len(board)):
             for j in range(len(board[0])):
-                backtrack(board, word, flag,i,j,0)
+                backtrack(board, word, flag,i,j,0)   #要遍历所有board
                 if flag[0]==True:
                     return True
         return flag[0]
