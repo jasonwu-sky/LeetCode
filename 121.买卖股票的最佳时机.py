@@ -1,3 +1,6 @@
+'''
+贪心算法
+'''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         if len(prices)<2:
